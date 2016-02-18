@@ -20,6 +20,5 @@
         <files>
                 <filename module="mod_tinytable">mod_tinytable.php</filename>
                 <filename>mod_tinytable.xml</filename>
-                <filename>index.html</filename>
         </files>
 </extension>
