@@ -1,7 +1,3 @@
-<?php 
-// No direct access to this file
-defined('_JEXEC') or die;
-
 <h2>
 	Статистика
 </h2>
@@ -111,4 +107,3 @@ defined('_JEXEC') or die;
 <a href="/tournaments/30" class="match-block__link">Полный список</a>
 </div>
 </div>
-?>
