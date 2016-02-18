@@ -1,7 +1,8 @@
 <?php 
 // No direct access to this file
 defined('_JEXEC') or die;
-<html><h2>Статистика</h2>
+?>
+<h1>Статистика</h1>
 <div class="content">
 <div id="standings">
 <div id="standings-data" class="stat-block" data-type="school" data-list="30,36">
@@ -107,5 +108,3 @@ defined('_JEXEC') or die;
 <a href="/tournaments/30" class="match-block__link">Полный список</a>
 </div>
 </div>
-</html>
-?>
