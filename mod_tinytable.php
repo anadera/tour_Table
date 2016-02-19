@@ -1,8 +1,4 @@
-<?php 
-// No direct access to this file
-defined('_JEXEC') or die;
-$id = $params->get("id");
-?>
+<?php defined('_JEXEC') or die; ?>
 <h1>Статистика</h1>
 <div class="content">
 <div id="standings">
@@ -21,91 +17,38 @@ $id = $params->get("id");
 				<th title="Очки">О</th>
 			</tr>
 		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>
-					<a href="http://www.goalstream.org/school/4"target="_blank">Спартак</a>
-				</td>
-				<td>90</td>
-				<td>206</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>
-					<a href="http://www.goalstream.org/school/5" target="_blank">Динамо</a>
-				</td>
-				<td>90</td>
-				<td>194</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>
-					<a href="http://www.goalstream.org/school/3" target="_blank">ЦСКА</a>
-				</td>
-				<td>90</td>
-				<td>194</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>
-					<a href="http://www.goalstream.org/school/2" target="_blank">Локомотив</a>
-				</td>
-				<td>90</td>
-				<td>186</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>
-					<a href="http://www.goalstream.org/school/21" target="_blank">Чертаново</a>
-				</td>
-				<td>90</td>
-				<td>162</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>
-					<a href="http://www.goalstream.org/school/9" target="_blank">Строгино</a>
-				</td>
-				<td>90</td>
-				<td>105</td>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>
-					<a href="http://www.goalstream.org/school/7" target="_blank">Торпедо</a>
-				</td>
-				<td>90</td>
-				<td>82</td>
-			</tr>
-			<tr>
-				<td>8</td>
-				<td>
-					<a href="http://www.goalstream.org/school/8" target="_blank">Локомотив-2</a>
-				</td>
-				<td>90</td>
-				<td>59</td>
-			</tr>
-			<tr>
-				<td>9</td>
-				<td>
-					<a href="/team/12/results ">ФШМ</a>
-				</td>
-				<td>90</td>
-				<td>58</td>
-			</tr>
-			<tr>
-				<td>10</td>
-				<td>
-					<a href="http://www.goalstream.org/school/22" target="_blank">Химки</a>
-				</td>
-				<td>90</td>
-				<td>38</td>
-			</tr>
-		</tbody>
-		</table>
+	</table>
 </div>
+<body>
+<?php
+$someArray = array(
+"1" => array("num" => 1, "name" => Спартак, "num3" => 90, "num4" => 206),
+"2" => array(num => 2, name => Динамо, num3 => 90, num4 => 194),
+"3" => array(num => 3, name => ЦСКА, num3 => 90, num4 => 194),
+"4" => array(num => 4, name => Локомотив, num3 => 90, num4 => 186),
+"5" => array(num => 5, name => Чертаново, num3 => 90, num4 => 162),
+"6" => array(num => 6, name => Строгино, num3 => 90, num4 => 105),
+"7" => array(num => 7, name => Торпедо, num3 => 90, num4 => 82),
+"8" => array(num => 8, name => "Локомотив-2", num3 => 90, num4 => 59),
+"9" => array(num => 9, name => ФШМ, num3 => 90, num4 => 58),
+"10" => array(num => 10, name => Химки, num3 => 90, num4 => 38),
+);
+?>
+<table>
+<?php foreach($someArray as $elOfSomeArray):?>
+    <tr>
+            <td><?= $elOfSomeArray['num']?></td>
+            <td>
+                    <a href=http://www.goalstream.org/school/4 target="_blank"><?= $elOfSomeArray['name']?></a>
+            </td>
+            <td><?= $elOfSomeArray['num3']?></td>
+            <td><?= $elOfSomeArray['num4']?></td>
+    </tr>
+	
+<?php endforeach; ?>
+</table>
+</body>
 <div id="standings-loader"></div>
-<a href="/tournaments/30" class="match-block__link">Полный список</a>
+<a href="" class="match-block__link">Полный список</a>
 </div>
 </div>
