@@ -1,4 +1,5 @@
 <?php defined('_JEXEC') or die; ?>
+<?php $id = $params->get("id"); ?>
 <h1>Статистика</h1>
 <div class="content">
 <div id="standings">
