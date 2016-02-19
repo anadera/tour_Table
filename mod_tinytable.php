@@ -23,16 +23,16 @@
 <body>
 <?php
 $someArray = array(
-"1" => array("num" => 1, "name" => Спартак, "num3" => 90, "num4" => 206),
-"2" => array(num => 2, name => Динамо, num3 => 90, num4 => 194),
-"3" => array(num => 3, name => ЦСКА, num3 => 90, num4 => 194),
-"4" => array(num => 4, name => Локомотив, num3 => 90, num4 => 186),
-"5" => array(num => 5, name => Чертаново, num3 => 90, num4 => 162),
-"6" => array(num => 6, name => Строгино, num3 => 90, num4 => 105),
-"7" => array(num => 7, name => Торпедо, num3 => 90, num4 => 82),
-"8" => array(num => 8, name => "Локомотив-2", num3 => 90, num4 => 59),
-"9" => array(num => 9, name => ФШМ, num3 => 90, num4 => 58),
-"10" => array(num => 10, name => Химки, num3 => 90, num4 => 38),
+"1" => array("num" => 1, "name" => Спартак, "num3" => 90, "num4" => 206, "ref"=>'http://www.goalstream.org/school/4'),
+"2" => array(num => 2, name => Динамо, num3 => 90, num4 => 194, "ref"=>'http://www.goalstream.org/school/5'),
+"3" => array(num => 3, name => ЦСКА, num3 => 90, num4 => 194, "ref"=>'http://www.goalstream.org/school/3'),
+"4" => array(num => 4, name => Локомотив, num3 => 90, num4 => 186, "ref"=>'http://www.goalstream.org/school/2'),
+"5" => array(num => 5, name => Чертаново, num3 => 90, num4 => 162, "ref"=>'http://www.goalstream.org/school/21'),
+"6" => array(num => 6, name => Строгино, num3 => 90, num4 => 105, "ref"=>'http://www.goalstream.org/school/9'),
+"7" => array(num => 7, name => Торпедо, num3 => 90, num4 => 82, "ref"=>'http://www.goalstream.org/school/7'),
+"8" => array(num => 8, name => "Локомотив-2", num3 => 90, num4 => 59, "ref"=>'http://www.goalstream.org/school/8'),
+"9" => array(num => 9, name => ФШМ, num3 => 90, num4 => 58, "ref"=>'http://www.fshm-moscow.ru/team/12/results'),
+"10" => array(num => 10, name => Химки, num3 => 90, num4 => 38, "ref"=>'http://www.goalstream.org/school/22'),
 );
 ?>
 <table>
@@ -40,7 +40,7 @@ $someArray = array(
     <tr>
             <td><?= $elOfSomeArray['num']?></td>
             <td>
-                    <a href=http://www.goalstream.org/school/4 target="_blank"><?= $elOfSomeArray['name']?></a>
+                    <a href=<?= $elOfSomeArray['ref']?>target="_blank"><?= $elOfSomeArray['name']?></a>
             </td>
             <td><?= $elOfSomeArray['num3']?></td>
             <td><?= $elOfSomeArray['num4']?></td>
