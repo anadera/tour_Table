@@ -8,18 +8,6 @@
     <div class="stat-block__left" style="display: none;"></div>
      <span id="stat-block-season-title">Клубная лига</span>
      <div class="stat-block__right" style=""></div>
- </div>
-    <table class="stat-block__table">
-		<thead>
-			<tr>
-				<th title="Место">М</th>
-				<th>Команда</th>
-				<th title="Количество сыгранных матчей">И</th>
-				<th title="Очки">О</th>
-			</tr>
-		</thead>
-	</table>
-</div>
 <body>
 <?php
 $someArray = array(
@@ -36,6 +24,12 @@ $someArray = array(
 );
 ?>
 <table>
+	<tr>
+	<th title="Место">М</th>
+				<th>Команда</th>
+				<th title="Количество сыгранных матчей">И</th>
+				<th title="Очки">О</th>	
+	</tr>
 <?php foreach($someArray as $elOfSomeArray):?>
     <tr>
             <td><?= $elOfSomeArray['num']?></td>
